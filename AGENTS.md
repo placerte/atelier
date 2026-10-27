@@ -10,7 +10,9 @@ The repository is currently documentation- and asset-first. There is no applicat
 
 - `atelier-theme-system.md` is the current design specification.
 - `README.md` is the public project introduction and should stay concise.
-- `Technical_Editorial_Brand_Moodboard.png` and `Terminal_Dark_Technical_Editorial_Board.png` are visual references, not generated files unless a future workflow explicitly says otherwise.
+- `design-tokens.json` is the machine-readable palette used to generate exact-color reference boards.
+- `assets/boards/` contains generated SVG reference boards; `tools/generate_boards.py` is their source generator.
+- `references/concepts/` contains earlier GPT-generated directional images. They are historical concepts, not authoritative color references.
 - `llm/` contains supporting workflow notes. It is intentionally ignored by Git; do not assume edits there will be committed.
 
 When prose, examples, and visual assets disagree, report the conflict rather than silently choosing a new design rule.
@@ -48,6 +50,7 @@ Use IBM Plex Sans for headings and body copy and IBM Plex Mono for code, labels,
 - Make the smallest coherent change and preserve the distinction between confirmed values, proposals, and open decisions.
 - Keep documentation plain Markdown with compact tables and fenced examples where they improve precision.
 - Update related prose and token examples together so the specification does not contradict itself.
+- After changing `design-tokens.json` or the board generator, run `python tools/generate_boards.py` and include the regenerated SVGs.
 - Do not overwrite or rename source images without explicit approval. Check references first.
 - When detailed image inspection is needed, follow `llm/image_ingestion_toolbox.md`: record provenance and observations in a sidecar Markdown file and distinguish observation from interpretation.
 - Record important design decisions by appending to `llm/decision_log.md`; never rewrite earlier entries. Remember that `llm/` is Git-ignored, so also reflect durable public decisions in the tracked specification.
@@ -61,6 +64,7 @@ There are currently no automated checks. For documentation changes:
 2. Check Markdown structure, tables, links, and fenced examples.
 3. Verify that statements about unfinished palettes remain qualified as proposals or TODOs.
 4. Inspect relevant images when a change depends on exact layout, color, geometry, or typography.
+5. Run `python tools/generate_boards.py`, then `git diff --exit-code -- assets/boards` to confirm generated boards are current.
 
 If a build or test toolchain is added later, document the exact commands here and in the README.
 

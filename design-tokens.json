@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "name": "Atelier",
+    "direction": "Technical Editorial Modernism",
+    "source_palette": "Omoro / Hipster"
+  },
+  "master": {
+    "red": "#A33B2C",
+    "yellow": "#C9962B",
+    "green": "#2F4A35",
+    "blue": "#3B5068",
+    "cream": "#EDE3CC"
+  },
+  "neutral": {
+    "charcoal": "#191F22",
+    "gray": "#81888C",
+    "paper": "#F7F1E3"
+  },
+  "derived": {
+    "red_bright": "#DE715F",
+    "green_bright": "#8BA891",
+    "yellow_bright": "#FFD470",
+    "blue_bright": "#91A9C4",
+    "magenta": "#87516D",
+    "magenta_bright": "#C18BA9",
+    "cyan": "#3F7777",
+    "cyan_bright": "#79B1AF",
+    "white_bright": "#FFFFF2"
+  },
+  "terminal_dark": {
+    "status": "working",
+    "background": "#191F22",
+    "foreground": "#EDE3CC",
+    "normal": ["#191F22", "#A33B2C", "#2F4A35", "#C9962B", "#3B5068", "#87516D", "#3F7777", "#EDE3CC"],
+    "bright": ["#81888C", "#DE715F", "#8BA891", "#FFD470", "#91A9C4", "#C18BA9", "#79B1AF", "#FFFFF2"]
+  },
+  "terminal_light": {
+    "status": "draft",
+    "background": "#EDE3CC",
+    "foreground": "#191F22",
+    "normal": ["#191F22", "#8C3024", "#2F4A35", "#765717", "#3B5068", "#70445A", "#2F6262", "#D3C8B0"],
+    "bright": ["#596064", "#A33B2C", "#496B50", "#916D20", "#526A84", "#87516D", "#3F7777", "#F7F1E3"]
+  }
+}

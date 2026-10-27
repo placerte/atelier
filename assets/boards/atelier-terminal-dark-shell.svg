@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">Terminal / Dark</title>
+<desc id="desc">Exact-color shell example for Terminal / Dark.</desc>
+<rect x="0" y="0" width="1536" height="1024" rx="0" fill="#191F22" stroke="none" stroke-width="0" opacity="1"/>
+<text x="72" y="78" fill="#DE715F" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">ATELIER / VISUAL SYSTEM</text>
+<text x="72" y="153" fill="#EDE3CC" font-family="IBM Plex Sans, sans-serif" font-size="54" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Terminal / Dark</text>
+<text x="72" y="196" fill="#EDE3CC" font-family="IBM Plex Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" opacity="0.72" xml:space="preserve">ANSI palette / shell and diagnostic output</text>
+<line x1="72" y1="228" x2="1464" y2="228" stroke="#DE715F" stroke-width="2"/>
+<text x="1464" y="78" fill="#DE715F" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">05—08 / WORKING</text>
+<rect x="72" y="278" width="1392" height="628" rx="10" fill="#191F22" stroke="#81888C" stroke-width="2" opacity="1"/>
+<rect x="72" y="278" width="1392" height="52" rx="0" fill="#81888C" stroke="none" stroke-width="0" opacity="0.18"/>
+<circle cx="104" cy="304" r="7" fill="#A33B2C" stroke="none" stroke-width="0"/>
+<circle cx="130" cy="304" r="7" fill="#C9962B" stroke="none" stroke-width="0"/>
+<circle cx="156" cy="304" r="7" fill="#2F4A35" stroke="none" stroke-width="0"/>
+<text x="768" y="310" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="500" text-anchor="middle" opacity="0.7" xml:space="preserve">atelier — 120×34</text>
+<text x="112" y="384" fill="#8BA891" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">$</text>
+<text x="152" y="384" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">atelier inspect --theme current</text>
+<text x="112" y="432" fill="#91A9C4" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">→</text>
+<text x="152" y="432" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">profile      Dark</text>
+<text x="112" y="480" fill="#FFD470" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">→</text>
+<text x="152" y="480" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">status       working</text>
+<text x="112" y="528" fill="#8BA891" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">✓</text>
+<text x="152" y="528" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">tokens       loaded from design-tokens.json</text>
+<text x="112" y="576" fill="#79B1AF" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">✓</text>
+<text x="152" y="576" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">foreground   readable on canvas</text>
+<text x="112" y="624" fill="#DE715F" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">!</text>
+<text x="152" y="624" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="19" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">contrast     review semantic color pairs</text>
+<text x="112" y="704" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" text-anchor="start" opacity="0.65" xml:space="preserve">NORMAL</text>
+<text x="112" y="820" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" text-anchor="start" opacity="0.65" xml:space="preserve">BRIGHT</text>
+<rect x="238" y="672" width="108" height="66" rx="0" fill="#191F22" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="292" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">00</text>
+<rect x="380" y="672" width="108" height="66" rx="0" fill="#A33B2C" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="434" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">01</text>
+<rect x="522" y="672" width="108" height="66" rx="0" fill="#2F4A35" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="576" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">02</text>
+<rect x="664" y="672" width="108" height="66" rx="0" fill="#C9962B" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="718" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">03</text>
+<rect x="806" y="672" width="108" height="66" rx="0" fill="#3B5068" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="860" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">04</text>
+<rect x="948" y="672" width="108" height="66" rx="0" fill="#87516D" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1002" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">05</text>
+<rect x="1090" y="672" width="108" height="66" rx="0" fill="#3F7777" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1144" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">06</text>
+<rect x="1232" y="672" width="108" height="66" rx="0" fill="#EDE3CC" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1286" y="764" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">07</text>
+<rect x="238" y="788" width="108" height="66" rx="0" fill="#81888C" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="292" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">08</text>
+<rect x="380" y="788" width="108" height="66" rx="0" fill="#DE715F" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="434" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">09</text>
+<rect x="522" y="788" width="108" height="66" rx="0" fill="#8BA891" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="576" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">10</text>
+<rect x="664" y="788" width="108" height="66" rx="0" fill="#FFD470" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="718" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">11</text>
+<rect x="806" y="788" width="108" height="66" rx="0" fill="#91A9C4" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="860" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">12</text>
+<rect x="948" y="788" width="108" height="66" rx="0" fill="#C18BA9" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1002" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">13</text>
+<rect x="1090" y="788" width="108" height="66" rx="0" fill="#79B1AF" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1144" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">14</text>
+<rect x="1232" y="788" width="108" height="66" rx="0" fill="#FFFFF2" stroke="#EDE3CC" stroke-width="1" opacity="1"/>
+<text x="1286" y="880" fill="#EDE3CC" font-family="IBM Plex Mono, monospace" font-size="13" font-weight="500" text-anchor="middle" opacity="1" xml:space="preserve">15</text>
+</svg>

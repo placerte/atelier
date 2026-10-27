@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+<title id="title">Terminal / Light</title>
+<desc id="desc">Exact-color code and monitor example for Terminal / Light.</desc>
+<rect x="0" y="0" width="1536" height="1024" rx="0" fill="#EDE3CC" stroke="none" stroke-width="0" opacity="1"/>
+<text x="72" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">ATELIER / VISUAL SYSTEM</text>
+<text x="72" y="153" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="54" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Terminal / Light</text>
+<text x="72" y="196" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" opacity="0.72" xml:space="preserve">ANSI palette / code and system monitor</text>
+<line x1="72" y1="228" x2="1464" y2="228" stroke="#A33B2C" stroke-width="2"/>
+<text x="1464" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">08—08 / DRAFT</text>
+<rect x="72" y="278" width="1392" height="628" rx="10" fill="#EDE3CC" stroke="#596064" stroke-width="2" opacity="1"/>
+<rect x="72" y="278" width="1392" height="52" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.18"/>
+<circle cx="104" cy="304" r="7" fill="#8C3024" stroke="none" stroke-width="0"/>
+<circle cx="130" cy="304" r="7" fill="#765717" stroke="none" stroke-width="0"/>
+<circle cx="156" cy="304" r="7" fill="#2F4A35" stroke="none" stroke-width="0"/>
+<text x="768" y="310" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="500" text-anchor="middle" opacity="0.7" xml:space="preserve">atelier — 120×34</text>
+<line x1="884" y1="330" x2="884" y2="906" stroke="#596064" stroke-width="1"/>
+<text x="112" y="374" fill="#526A84" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">theme.py</text>
+<text x="112" y="430" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="400" text-anchor="end" opacity="1" xml:space="preserve">1</text>
+<text x="140" y="430" fill="#87516D" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">def</text>
+<text x="172.4" y="430" fill="#526A84" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve"> build_palette</text>
+<text x="323.6" y="430" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">(tokens):</text>
+<text x="112" y="478" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="400" text-anchor="end" opacity="1" xml:space="preserve">2</text>
+<text x="140" y="478" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">    background</text>
+<text x="291.20000000000005" y="478" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve"> = </text>
+<text x="323.6" y="478" fill="#916D20" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">tokens[&quot;charcoal&quot;]</text>
+<text x="112" y="526" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="400" text-anchor="end" opacity="1" xml:space="preserve">3</text>
+<text x="140" y="526" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">    accents</text>
+<text x="258.8" y="526" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve"> = </text>
+<text x="291.20000000000005" y="526" fill="#3F7777" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">select</text>
+<text x="356.00000000000006" y="526" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">(tokens)</text>
+<text x="112" y="574" fill="#596064" font-family="IBM Plex Mono, monospace" font-size="17" font-weight="400" text-anchor="end" opacity="1" xml:space="preserve">4</text>
+<text x="140" y="574" fill="#87516D" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">    return</text>
+<text x="248.0" y="574" fill="#526A84" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve"> Palette</text>
+<text x="334.4" y="574" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">(background, accents)</text>
+<text x="934" y="374" fill="#496B50" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">SYSTEM / LIVE</text>
+<text x="934" y="442" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">CPU</text>
+<rect x="1006" y="424" width="350" height="14" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.25"/>
+<rect x="1006" y="424" width="147.0" height="14" rx="0" fill="#496B50" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1418" y="442" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">42%</text>
+<text x="934" y="512" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">MEM</text>
+<rect x="1006" y="494" width="350" height="14" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.25"/>
+<rect x="1006" y="494" width="234.5" height="14" rx="0" fill="#526A84" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1418" y="512" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">67%</text>
+<text x="934" y="582" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">IO</text>
+<rect x="1006" y="564" width="350" height="14" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.25"/>
+<rect x="1006" y="564" width="98.00000000000001" height="14" rx="0" fill="#3F7777" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1418" y="582" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">28%</text>
+<text x="934" y="652" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">NET</text>
+<rect x="1006" y="634" width="350" height="14" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.25"/>
+<rect x="1006" y="634" width="189.0" height="14" rx="0" fill="#916D20" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1418" y="652" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">54%</text>
+<line x1="112" y1="688" x2="824" y2="688" stroke="#596064" stroke-width="1"/>
+<text x="112" y="734" fill="#496B50" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">$</text>
+<text x="144" y="734" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">git status --short</text>
+<text x="112" y="786" fill="#916D20" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">M</text>
+<text x="144" y="786" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">design-tokens.json</text>
+<text x="112" y="838" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">?</text>
+<text x="144" y="838" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">assets/boards/</text>
+</svg>

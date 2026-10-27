@@ -151,6 +151,21 @@ atelier:
 
 This is a **conceptual source-of-truth schema**, not an Aether configuration file. No claim is made that Aether natively links these variants to a master or accepts this YAML directly.
 
+### Machine-readable tokens and reference boards
+
+`design-tokens.json` is the machine-readable implementation of the working palette. `tools/generate_boards.py` reads it and deterministically generates the SVG files under `assets/boards/`.
+
+- The master colors remain fixed and unchanged.
+- The Terminal Dark boards use the optional brighter refinement shown in the table above; those values still require comparison with the saved Aether theme.
+- The Terminal Light boards introduce an explicit **draft candidate** so it can be reviewed visually and contrast-tested. Its mapping is not yet approved as final.
+- Generated boards are color-authoritative for the token file that produced them, but they do not by themselves establish accessibility or approve a draft palette.
+
+Regenerate the complete reference set with:
+
+```bash
+python tools/generate_boards.py
+```
+
 ## 10. Aether workflow and open decisions
 
 - Keep separately named Aether Blueprints or theme presets where supported.
@@ -160,6 +175,7 @@ This is a **conceptual source-of-truth schema**, not an Aether configuration fil
 - Decide whether Terminal Dark normal colors should remain original or be brightened for routine text readability.
 - Contrast-test colored text and interactive elements in Brand Light, Brand Dark, and Brand Darker.
 - Apply **IBM Plex Sans / IBM Plex Mono** consistently to the website and slide templates.
+- Review the generated Terminal Light candidate and either approve it or revise its values in `design-tokens.json`.
 
 ## 11. Naming convention
 

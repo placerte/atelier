@@ -4,7 +4,7 @@ Atelier is the theme and visual identity system for `placerte`. It combines edit
 
 The system is designed to remain recognizable across websites, presentations, documents, terminals, and code-oriented interfaces without forcing every medium to use colors in the same way.
 
-![Atelier technical editorial brand moodboard](Technical_Editorial_Brand_Moodboard.png)
+![Atelier master palette reference](assets/boards/atelier-original.svg)
 
 ## Design language
 
@@ -42,7 +42,37 @@ Atelier separates brand presentation from terminal behavior:
 
 This distinction is intentional: brand palettes prioritize identity and composition, while terminal palettes must also provide readable ANSI colors and predictable software behavior.
 
-![Atelier Terminal Dark technical editorial board](Terminal_Dark_Technical_Editorial_Board.png)
+## Reference boards
+
+These boards are deterministic SVGs generated from [`design-tokens.json`](design-tokens.json). Unlike generative moodboards, their fills use the declared HEX values exactly.
+
+| Brand Light | Brand Dark |
+|---|---|
+| ![Atelier Brand Light](assets/boards/atelier-brand-light.svg) | ![Atelier Brand Dark](assets/boards/atelier-brand-dark.svg) |
+| **Brand Darker** | **Original / Master** |
+| ![Atelier Brand Darker](assets/boards/atelier-brand-darker.svg) | ![Atelier Original](assets/boards/atelier-original.svg) |
+
+### Terminal Dark
+
+| Shell and ANSI palette | Code and system monitor |
+|---|---|
+| ![Atelier Terminal Dark shell](assets/boards/atelier-terminal-dark-shell.svg) | ![Atelier Terminal Dark code](assets/boards/atelier-terminal-dark-code.svg) |
+
+### Terminal Light — draft
+
+The light-terminal mapping is a concrete candidate for evaluation, not a finalized palette.
+
+| Shell and ANSI palette | Code and system monitor |
+|---|---|
+| ![Atelier Terminal Light shell](assets/boards/atelier-terminal-light-shell.svg) | ![Atelier Terminal Light code](assets/boards/atelier-terminal-light-code.svg) |
+
+Regenerate every board after changing tokens:
+
+```bash
+python tools/generate_boards.py
+```
+
+The earlier GPT-generated moodboards are retained in `references/concepts/` as directional history, not color-authoritative references.
 
 ## Project status
 
@@ -59,9 +89,11 @@ See [atelier-theme-system.md](atelier-theme-system.md) for the complete specific
 
 ```text
 .
+├── assets/boards/                 # Generated, exact-color SVG references
+├── references/concepts/           # Earlier generative concept boards
+├── tools/generate_boards.py       # Deterministic SVG generator
+├── design-tokens.json             # Shared machine-readable colors
 ├── atelier-theme-system.md
-├── Technical_Editorial_Brand_Moodboard.png
-├── Terminal_Dark_Technical_Editorial_Board.png
 └── AGENTS.md
 ```
 
