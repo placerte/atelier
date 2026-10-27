@@ -35,12 +35,21 @@ Atelier separates brand presentation from terminal behavior:
 |---|---|
 | **Original** | Immutable master/reference palette |
 | **Brand Light** | Cream canvas with original colors as accents |
-| **Brand Dark** | Charcoal canvas with brighter derived accents |
-| **Brand Darker** | Charcoal canvas with restrained original accents |
+| **Brand Dark** | Charcoal canvas with role-based original and derived accents |
 | **Terminal Dark** | ANSI-aware dark terminal palette |
 | **Terminal Light** | ANSI-aware light terminal palette; still in development |
 
 This distinction is intentional: brand palettes prioritize identity and composition, while terminal palettes must also provide readable ANSI colors and predictable software behavior.
+
+Brand Dark does not choose between muted and bright colors globally. It assigns them by function:
+
+| Semantic role | Color source | Typical use |
+|---|---|---|
+| `surface` | Original master colors | Large shapes, panels, and chart areas |
+| `detail` | Brighter derivatives | Labels, icons, fine lines, and small indicators |
+| `subtle` | Muted derivatives | Borders, grids, and secondary structure |
+
+The size, adjacency, and importance of an element still matter. Semantic roles are defaults, not permission to skip contrast checks.
 
 ## Reference boards
 
@@ -49,8 +58,8 @@ These boards are deterministic SVGs generated from [`design-tokens.json`](design
 | Brand Light | Brand Dark |
 |---|---|
 | ![Atelier Brand Light](assets/boards/atelier-brand-light.svg) | ![Atelier Brand Dark](assets/boards/atelier-brand-dark.svg) |
-| **Brand Darker** | **Original / Master** |
-| ![Atelier Brand Darker](assets/boards/atelier-brand-darker.svg) | ![Atelier Original](assets/boards/atelier-original.svg) |
+
+![Atelier Original](assets/boards/atelier-original.svg)
 
 ### Terminal Dark
 
@@ -73,6 +82,7 @@ python tools/generate_boards.py
 ```
 
 The earlier GPT-generated moodboards are retained in `references/concepts/` as directional history, not color-authoritative references.
+The retired Brand Darker board is retained in `references/history/` to preserve the design decision trail.
 
 ## Project status
 
@@ -91,6 +101,7 @@ See [atelier-theme-system.md](atelier-theme-system.md) for the complete specific
 .
 ├── assets/boards/                 # Generated, exact-color SVG references
 ├── references/concepts/           # Earlier generative concept boards
+├── references/history/            # Retired deterministic references
 ├── tools/generate_boards.py       # Deterministic SVG generator
 ├── design-tokens.json             # Shared machine-readable colors
 ├── atelier-theme-system.md

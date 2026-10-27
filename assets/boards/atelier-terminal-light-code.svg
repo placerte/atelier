@@ -6,7 +6,7 @@
 <text x="72" y="153" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="54" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Terminal / Light</text>
 <text x="72" y="196" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" opacity="0.72" xml:space="preserve">ANSI palette / code and system monitor</text>
 <line x1="72" y1="228" x2="1464" y2="228" stroke="#A33B2C" stroke-width="2"/>
-<text x="1464" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">08—08 / DRAFT</text>
+<text x="1464" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">07—07 / DRAFT</text>
 <rect x="72" y="278" width="1392" height="628" rx="10" fill="#EDE3CC" stroke="#596064" stroke-width="2" opacity="1"/>
 <rect x="72" y="278" width="1392" height="52" rx="0" fill="#596064" stroke="none" stroke-width="0" opacity="0.18"/>
 <circle cx="104" cy="304" r="7" fill="#8C3024" stroke="none" stroke-width="0"/>

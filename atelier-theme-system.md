@@ -19,14 +19,13 @@ The selected direction is **Technical Editorial Modernism**, combining four earl
 
 ## 2. Theme architecture
 
-Six named palettes, **including the master**:
+Five named palettes, **including the master**:
 
 | Name | Canvas | Color strategy | Intended use |
 |---|---|---|---|
 | **Atelier — Original** | Not applicable | Original five colors, unchanged | Master/reference palette |
 | **Atelier — Brand Light** | Cream | Original colors as accents | Website, slides, documents on light canvas |
-| **Atelier — Brand Dark** | Charcoal | Brighter, more legible derived accents | Website, slides, documents on dark canvas |
-| **Atelier — Brand Darker** | Charcoal | Original colors as accents | Restrained, earthy dark website/slides |
+| **Atelier — Brand Dark** | Charcoal | Original surfaces, bright details, muted structure | Website, slides, documents on dark canvas |
 | **Atelier — Terminal Dark** | Charcoal | ANSI-specific normal and bright colors | Dark terminal / code interfaces |
 | **Atelier — Terminal Light** | Cream | ANSI colors adapted for light background | Light terminal / code interfaces |
 
@@ -92,27 +91,29 @@ Use darker colors derived from the original palette for readable text on cream. 
 
 Original colors can be used for headlines, large shapes, diagrams, and accent blocks, subject to contrast checks for small text.
 
-## 7. Brand Dark — concept
+## 7. Brand Dark — semantic roles
 
 - **Background:** `#191F22`.
 - **Primary text:** `#EDE3CC`.
-- **Accents:** Brighter derived variants from Terminal Dark, rather than the original dark hues.
+- **Accents:** Assigned by semantic role rather than choosing one brightness for the whole theme.
 - **Mood:** Energetic, readable, still earthy.
 - **Suggested accent set (working):** Red `#DE715F`, Green `#8BA891`, Yellow `#FFD470`, Blue `#91A9C4`, Magenta `#C18BA9`, Cyan `#79B1AF`.
 
 These brighter accents were discussed as a proposed refinement. They are **not** all confirmed as the current Aether bright ANSI values.
 
-## 8. Brand Darker — concept
+Use three role families:
 
-- **Background:** `#191F22`.
-- **Primary text:** `#EDE3CC`.
-- **Accents:** **Original master colors, unchanged**: `#A33B2C`, `#C9962B`, `#2F4A35`, `#3B5068`.
-- **Mood:** Dark, understated, earthy, close to the original palette's character.
-- **Usage:** Dark visual storytelling, large geometric forms, background blocks, editorial accents.
+| Role | Source | Typical use |
+|---|---|---|
+| `surface` | Original master colors | Large shapes, panels, chart areas, and visual mass |
+| `detail` | Brighter derived colors | Labels, icons, thin rules, small indicators, and high-information accents |
+| `subtle` | Muted derived colors | Borders, grids, dividers, and secondary decoration |
 
-**Accessibility caution:** Forest Green and Rinsed Denim are too dark for many small-text applications on charcoal. Use cream for primary text; reserve those darker original hues for larger decorative areas, or explicitly check contrast.
+Brightness is not the only selection criterion. Choose a role according to the element's size, contrast against its adjacent surface, and visual importance. Bright yellow can dominate a large panel; original Forest Green can disappear as a one-pixel line on charcoal. Use cream for primary text and explicitly check any colored text.
 
-## 9. Recommended token model
+Brand Darker is retired as a separate theme. Its original-color character now lives in Brand Dark's `surface` role, while its old generated board remains under `references/history/`.
+
+## 8. Recommended token model
 
 Keep the original palette immutable and derive application-specific roles from it:
 
@@ -133,11 +134,9 @@ atelier:
   brand_dark:
     background: '#191F22'
     foreground: '#EDE3CC'
-    accent_source: terminal_dark_bright_refined
-  brand_darker:
-    background: '#191F22'
-    foreground: '#EDE3CC'
-    accent_source: master
+    surface: master
+    detail: terminal_dark_bright_refined
+    subtle: muted_derived
   terminal_dark:
     background: '#191F22'
     foreground: '#EDE3CC'
@@ -166,24 +165,23 @@ Regenerate the complete reference set with:
 python tools/generate_boards.py
 ```
 
-## 10. Aether workflow and open decisions
+## 9. Aether workflow and open decisions
 
 - Keep separately named Aether Blueprints or theme presets where supported.
 - Confirm whether Aether offers automatic master-to-variant inheritance; **do not assume it does**.
 - Verify saved **Terminal Dark** ANSI values against Aether before exporting.
 - Finalize and contrast-test **Terminal Light**.
 - Decide whether Terminal Dark normal colors should remain original or be brightened for routine text readability.
-- Contrast-test colored text and interactive elements in Brand Light, Brand Dark, and Brand Darker.
+- Contrast-test colored text and interactive elements in Brand Light and Brand Dark.
 - Apply **IBM Plex Sans / IBM Plex Mono** consistently to the website and slide templates.
 - Review the generated Terminal Light candidate and either approve it or revise its values in `design-tokens.json`.
 
-## 11. Naming convention
+## 10. Naming convention
 
 1. **Atelier — Original** (master)
 2. **Atelier — Brand Light**
 3. **Atelier — Brand Dark**
-4. **Atelier — Brand Darker**
-5. **Atelier — Terminal Dark**
-6. **Atelier — Terminal Light**
+4. **Atelier — Terminal Dark**
+5. **Atelier — Terminal Light**
 
 **Guiding rule:** One visual identity, multiple purpose-built expressions. Do not conflate *original*, *bright*, and *dimmed* colors or equate a dark brand layout with a terminal ANSI palette.

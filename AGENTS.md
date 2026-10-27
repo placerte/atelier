@@ -31,16 +31,15 @@ Preserve these five original Omoro Hipster source colors exactly unless the user
 
 `#191F22` is the derived charcoal neutral; it is not one of the five source colors.
 
-Keep the six named palettes distinct:
+Keep the five named palettes distinct:
 
 1. Atelier — Original
 2. Atelier — Brand Light
 3. Atelier — Brand Dark
-4. Atelier — Brand Darker
-5. Atelier — Terminal Dark
-6. Atelier — Terminal Light
+4. Atelier — Terminal Dark
+5. Atelier — Terminal Light
 
-Do not conflate brand palettes with ANSI terminal palettes. Original, current bright, and proposed refined colors must be labeled accurately. In particular, the Terminal Light ANSI mapping and several brighter refinements are still proposals or TODOs, not finalized facts.
+Do not conflate brand palettes with ANSI terminal palettes. Brand Dark uses original colors for large surfaces, bright derivatives for fine details, and muted derivatives for subtle structure; these are semantic roles within one theme, not separate dark themes. Original, current bright, and proposed refined colors must be labeled accurately. In particular, the Terminal Light ANSI mapping and several brighter refinements are still proposals or TODOs, not finalized facts.
 
 Use IBM Plex Sans for headings and body copy and IBM Plex Mono for code, labels, annotations, and technical details unless a deliverable has an explicit exception.
 

@@ -57,7 +57,7 @@ def header(name, subtitle, fg, rule):
         text(72, 153, name, 54, fg, 600),
         text(72, 196, subtitle, 21, fg, 400, opacity=0.72),
         line(72, 228, 1464, 228, rule, 2),
-        text(1464, 78, "01—08 / 2026", 16, rule, 500, "mono", "end"),
+        text(1464, 78, "01—07 / 2026", 16, rule, 500, "mono", "end"),
     ]
 
 
@@ -91,25 +91,32 @@ def master_board():
     return svg("Atelier Original master palette", "Exact source colors and core design principle.", body, bg)
 
 
-def brand_board(name, background, foreground, accents, mode, number):
-    rule = accents[0]
+def brand_board(name, theme, mode, number):
+    background = theme["background"]
+    foreground = theme["foreground"]
+    surface = theme["surface"]
+    detail = theme["detail"]
+    subtle = theme["subtle"]
+    rule = detail[0]
     body = header(name, "Editorial hierarchy / technical annotation / geometric restraint", foreground, rule)
-    body[4] = text(1464, 78, f"{number:02d}—08 / 2026", 16, rule, 500, "mono", "end")
+    body[4] = text(1464, 78, f"{number:02d}—07 / 2026", 16, rule, 500, "mono", "end")
     body += [
-        text(72, 292, "FIELD NOTE  /  027", 15, accents[1], 600, "mono"),
+        text(72, 292, "FIELD NOTE  /  027", 15, detail[1], 600, "mono"),
         text(72, 354, "Structure makes", 58, foreground, 600),
         text(72, 418, "the system visible.", 58, foreground, 400),
         text(76, 478, "A visual language for interfaces, documents, and ideas.", 20, foreground, 400, opacity=0.72),
-        rect(72, 552, 620, 252, background, accents[2], 2),
-        text(104, 600, "COMPOSITION / 01", 14, accents[2], 600, "mono"),
-        line(104, 635, 650, 635, accents[2], 1, "6 7"),
+        rect(72, 552, 620, 252, background, subtle[2], 2),
+        text(104, 600, "COMPOSITION / 01", 14, detail[2], 600, "mono"),
+        line(104, 635, 650, 635, subtle[2], 1, "6 7"),
         text(104, 690, "Clear hierarchy", 30, foreground, 600),
         text(104, 733, "Measured contrast", 30, foreground, 400),
         text(104, 776, "Repeatable geometry", 30, foreground, 400),
-        rect(818, 286, 646, 518, accents[3]),
-        rect(866, 334, 248, 194, accents[0]),
-        circle(1288, 432, 112, accents[1]),
-        rect(866, 578, 518, 34, accents[2]),
+        rect(818, 286, 646, 518, surface[3]),
+        rect(866, 334, 248, 194, surface[0]),
+        circle(1288, 432, 112, surface[1]),
+        rect(866, 578, 518, 34, surface[2]),
+        line(842, 310, 1440, 310, detail[3], 3),
+        circle(1418, 334, 7, detail[1]),
         rect(866, 646, 430, 18, foreground, opacity=0.78),
         rect(866, 686, 350, 18, foreground, opacity=0.48),
         text(1464, 874, mode.upper(), 16, foreground, 600, "mono", "end"),
@@ -124,7 +131,7 @@ def terminal_chrome(title, subtitle, palette, number):
     bg, fg = palette["background"], palette["foreground"]
     border = palette["bright"][0]
     body = header(title, subtitle, fg, palette["bright"][1])
-    body[4] = text(1464, 78, f"{number:02d}—08 / {palette['status'].upper()}", 16, palette["bright"][1], 500, "mono", "end")
+    body[4] = text(1464, 78, f"{number:02d}—07 / {palette['status'].upper()}", 16, palette["bright"][1], 500, "mono", "end")
     body += [rect(72, 278, 1392, 628, bg, border, 2, 10), rect(72, 278, 1392, 52, border, opacity=0.18)]
     body += [circle(104, 304, 7, palette["normal"][1]), circle(130, 304, 7, palette["normal"][3]), circle(156, 304, 7, palette["normal"][2]), text(768, 310, "atelier — 120×34", 14, fg, 500, "mono", "middle", 0.7)]
     return body
@@ -189,13 +196,12 @@ def write(name, content):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     write("atelier-original.svg", master_board())
-    write("atelier-brand-light.svg", brand_board("Brand / Light", MASTER["cream"], NEUTRAL["charcoal"], [MASTER["red"], MASTER["yellow"], MASTER["green"], MASTER["blue"]], "cream canvas / original accents", 2))
-    write("atelier-brand-dark.svg", brand_board("Brand / Dark", NEUTRAL["charcoal"], MASTER["cream"], [DERIVED["red_bright"], DERIVED["yellow_bright"], DERIVED["green_bright"], DERIVED["blue_bright"]], "charcoal canvas / bright accents", 3))
-    write("atelier-brand-darker.svg", brand_board("Brand / Darker", NEUTRAL["charcoal"], MASTER["cream"], [MASTER["red"], MASTER["yellow"], MASTER["green"], MASTER["blue"]], "charcoal canvas / original accents", 4))
-    write("atelier-terminal-dark-shell.svg", terminal_shell("Terminal / Dark", TOKENS["terminal_dark"], 5))
-    write("atelier-terminal-dark-code.svg", terminal_code("Terminal / Dark", TOKENS["terminal_dark"], 6))
-    write("atelier-terminal-light-shell.svg", terminal_shell("Terminal / Light", TOKENS["terminal_light"], 7))
-    write("atelier-terminal-light-code.svg", terminal_code("Terminal / Light", TOKENS["terminal_light"], 8))
+    write("atelier-brand-light.svg", brand_board("Brand / Light", TOKENS["brand_light"], "cream canvas / semantic roles", 2))
+    write("atelier-brand-dark.svg", brand_board("Brand / Dark", TOKENS["brand_dark"], "original surfaces / bright details", 3))
+    write("atelier-terminal-dark-shell.svg", terminal_shell("Terminal / Dark", TOKENS["terminal_dark"], 4))
+    write("atelier-terminal-dark-code.svg", terminal_code("Terminal / Dark", TOKENS["terminal_dark"], 5))
+    write("atelier-terminal-light-shell.svg", terminal_shell("Terminal / Light", TOKENS["terminal_light"], 6))
+    write("atelier-terminal-light-code.svg", terminal_code("Terminal / Light", TOKENS["terminal_light"], 7))
 
 
 if __name__ == "__main__":

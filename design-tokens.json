@@ -27,6 +27,22 @@
     "cyan_bright": "#79B1AF",
     "white_bright": "#FFFFF2"
   },
+  "brand_light": {
+    "status": "working",
+    "background": "#EDE3CC",
+    "foreground": "#191F22",
+    "surface": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068"],
+    "detail": ["#8C3024", "#765717", "#2F4A35", "#3B5068"],
+    "subtle": ["#C98678", "#D9B969", "#819184", "#8996A4"]
+  },
+  "brand_dark": {
+    "status": "working",
+    "background": "#191F22",
+    "foreground": "#EDE3CC",
+    "surface": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068"],
+    "detail": ["#DE715F", "#FFD470", "#8BA891", "#91A9C4"],
+    "subtle": ["#6A312A", "#806825", "#294033", "#344657"]
+  },
   "terminal_dark": {
     "status": "working",
     "background": "#191F22",

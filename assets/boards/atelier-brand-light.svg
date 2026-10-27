@@ -2,18 +2,18 @@
 <title id="title">Atelier Brand / Light</title>
 <desc id="desc">Exact-color Brand / Light reference board.</desc>
 <rect x="0" y="0" width="1536" height="1024" rx="0" fill="#EDE3CC" stroke="none" stroke-width="0" opacity="1"/>
-<text x="72" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">ATELIER / VISUAL SYSTEM</text>
+<text x="72" y="78" fill="#8C3024" font-family="IBM Plex Mono, monospace" font-size="18" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">ATELIER / VISUAL SYSTEM</text>
 <text x="72" y="153" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="54" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Brand / Light</text>
 <text x="72" y="196" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" opacity="0.72" xml:space="preserve">Editorial hierarchy / technical annotation / geometric restraint</text>
-<line x1="72" y1="228" x2="1464" y2="228" stroke="#A33B2C" stroke-width="2"/>
-<text x="1464" y="78" fill="#A33B2C" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">02—08 / 2026</text>
-<text x="72" y="292" fill="#C9962B" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">FIELD NOTE  /  027</text>
+<line x1="72" y1="228" x2="1464" y2="228" stroke="#8C3024" stroke-width="2"/>
+<text x="1464" y="78" fill="#8C3024" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">02—07 / 2026</text>
+<text x="72" y="292" fill="#765717" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">FIELD NOTE  /  027</text>
 <text x="72" y="354" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="58" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Structure makes</text>
 <text x="72" y="418" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="58" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">the system visible.</text>
 <text x="76" y="478" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="400" text-anchor="start" opacity="0.72" xml:space="preserve">A visual language for interfaces, documents, and ideas.</text>
-<rect x="72" y="552" width="620" height="252" rx="0" fill="#EDE3CC" stroke="#2F4A35" stroke-width="2" opacity="1"/>
+<rect x="72" y="552" width="620" height="252" rx="0" fill="#EDE3CC" stroke="#819184" stroke-width="2" opacity="1"/>
 <text x="104" y="600" fill="#2F4A35" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">COMPOSITION / 01</text>
-<line x1="104" y1="635" x2="650" y2="635" stroke="#2F4A35" stroke-width="1" stroke-dasharray="6 7"/>
+<line x1="104" y1="635" x2="650" y2="635" stroke="#819184" stroke-width="1" stroke-dasharray="6 7"/>
 <text x="104" y="690" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="30" font-weight="600" text-anchor="start" opacity="1" xml:space="preserve">Clear hierarchy</text>
 <text x="104" y="733" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="30" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">Measured contrast</text>
 <text x="104" y="776" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="30" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">Repeatable geometry</text>
@@ -21,10 +21,12 @@
 <rect x="866" y="334" width="248" height="194" rx="0" fill="#A33B2C" stroke="none" stroke-width="0" opacity="1"/>
 <circle cx="1288" cy="432" r="112" fill="#C9962B" stroke="none" stroke-width="0"/>
 <rect x="866" y="578" width="518" height="34" rx="0" fill="#2F4A35" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="842" y1="310" x2="1440" y2="310" stroke="#3B5068" stroke-width="3"/>
+<circle cx="1418" cy="334" r="7" fill="#765717" stroke="none" stroke-width="0"/>
 <rect x="866" y="646" width="430" height="18" rx="0" fill="#191F22" stroke="none" stroke-width="0" opacity="0.78"/>
 <rect x="866" y="686" width="350" height="18" rx="0" fill="#191F22" stroke="none" stroke-width="0" opacity="0.48"/>
-<text x="1464" y="874" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="end" opacity="1" xml:space="preserve">CREAM CANVAS / ORIGINAL ACCENTS</text>
-<line x1="72" y1="918" x2="1464" y2="918" stroke="#A33B2C" stroke-width="2"/>
+<text x="1464" y="874" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="end" opacity="1" xml:space="preserve">CREAM CANVAS / SEMANTIC ROLES</text>
+<line x1="72" y1="918" x2="1464" y2="918" stroke="#8C3024" stroke-width="2"/>
 <text x="72" y="958" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="start" opacity="1" xml:space="preserve">IBM PLEX SANS</text>
 <text x="1464" y="958" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="end" opacity="1" xml:space="preserve">IBM PLEX MONO / LABELS + DATA</text>
 </svg>
