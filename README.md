@@ -51,6 +51,8 @@ Brand Dark does not choose between muted and bright colors globally. It assigns 
 
 The size, adjacency, and importance of an element still matter. Semantic roles are defaults, not permission to skip contrast checks.
 
+Technical diagrams may also use derived Magenta (`#87516D`) and Cyan (`#3F7777`) accents. Filled nodes keep the same base fill in both brand modes: Brand Light pairs them with darker same-hue borders, while Brand Dark uses brighter same-hue borders. These two accents extend the working diagram palette without changing the immutable five-color master palette.
+
 ## Reference boards
 
 These boards are deterministic SVGs generated from [`design-tokens.json`](design-tokens.json). Unlike generative moodboards, their fills use the declared HEX values exactly.

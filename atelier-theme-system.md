@@ -1,6 +1,6 @@
 # Atelier Theme System
 
-**Status:** Working design specification — 27 October 2026  
+**Status:** Working design specification — 28 October 2026
 **Identity:** `placerte` / Technical Editorial Modernism  
 **Purpose:** Consistent visual identity across website, presentations, documents, and terminal environments.
 **Palette provenance:** Omoro’s **Hipster** palette is the source of the five original HEX colors. **Atelier** is the name of this derived design system; the source palette is credited, not renamed retroactively.
@@ -91,6 +91,27 @@ Use darker colors derived from the original palette for readable text on cream. 
 
 Original colors can be used for headlines, large shapes, diagrams, and accent blocks, subject to contrast checks for small text.
 
+### Diagram accent extension and border treatment
+
+Technical diagrams may extend the four chromatic master accents with derived Magenta `#87516D` and Cyan `#3F7777`. These are supporting accents, not additions to the immutable five-color master palette.
+
+For filled diagram nodes, keep the fill identical across Brand Light and Brand Dark. Change the border role with the canvas:
+
+- **Brand Light:** use a darker same-hue border to define the shape against cream.
+- **Brand Dark:** use a brighter same-hue border to define the shape against charcoal.
+- Use opaque detail colors for labels and fine foreground elements; transparency is reserved for backgrounds, subtle structure, and secondary decoration.
+
+| Accent | Shared fill | Brand Light border | Brand Dark border |
+|---|---|---|---|
+| Red | `#A33B2C` | `#7C3329` | `#DE715F` |
+| Yellow | `#C9962B` | `#987528` | `#FFD470` |
+| Green | `#2F4A35` | `#293E30` | `#8BA891` |
+| Blue | `#3B5068` | `#314254` | `#91A9C4` |
+| Magenta | `#87516D` | `#684358` | `#AD7491` |
+| Cyan | `#3F7777` | `#345E5F` | `#578F8F` |
+
+The Brand Light borders are deterministic sRGB mixes of 72% fill and 28% Charcoal. The Brand Dark magenta and cyan borders intentionally use the current Aether bright values; the brighter `#C18BA9` and `#79B1AF` refinements remain proposals for terminal evaluation.
+
 ## 7. Brand Dark — semantic roles
 
 - **Background:** `#191F22`.
@@ -131,12 +152,16 @@ atelier:
     background: '#EDE3CC'
     foreground: '#191F22'
     accent_source: master
+    diagram_fill: [red, yellow, green, blue, magenta, cyan]
+    diagram_border: darker_same_hue
   brand_dark:
     background: '#191F22'
     foreground: '#EDE3CC'
     surface: master
     detail: terminal_dark_bright_refined
     subtle: muted_derived
+    diagram_fill: same_as_brand_light
+    diagram_border: brighter_same_hue
   terminal_dark:
     background: '#191F22'
     foreground: '#EDE3CC'

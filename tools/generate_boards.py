@@ -97,6 +97,8 @@ def brand_board(name, theme, mode, number):
     surface = theme["surface"]
     detail = theme["detail"]
     subtle = theme["subtle"]
+    diagram_fill = theme["diagram_fill"]
+    diagram_border = theme["diagram_border"]
     rule = detail[0]
     body = header(name, "Editorial hierarchy / technical annotation / geometric restraint", foreground, rule)
     body[4] = text(1464, 78, f"{number:02d}—07 / 2026", 16, rule, 500, "mono", "end")
@@ -112,13 +114,15 @@ def brand_board(name, theme, mode, number):
         text(104, 733, "Measured contrast", 30, foreground, 400),
         text(104, 776, "Repeatable geometry", 30, foreground, 400),
         rect(818, 286, 646, 518, surface[3]),
-        rect(866, 334, 248, 194, surface[0]),
-        circle(1288, 432, 112, surface[1]),
-        rect(866, 578, 518, 34, surface[2]),
+        rect(866, 334, 248, 194, diagram_fill[0], diagram_border[0], 8),
+        circle(1288, 432, 112, diagram_fill[1], diagram_border[1], 8),
+        rect(866, 578, 518, 34, diagram_fill[2], diagram_border[2], 5),
         line(842, 310, 1440, 310, detail[3], 3),
         circle(1418, 334, 7, detail[1]),
         rect(866, 646, 430, 18, foreground, opacity=0.78),
         rect(866, 686, 350, 18, foreground, opacity=0.48),
+        circle(1340, 744, 26, diagram_fill[4], diagram_border[4], 6),
+        circle(1410, 744, 26, diagram_fill[5], diagram_border[5], 6),
         text(1464, 874, mode.upper(), 16, foreground, 600, "mono", "end"),
         line(72, 918, 1464, 918, rule, 2),
         text(72, 958, "IBM PLEX SANS", 15, foreground, 500, "mono"),

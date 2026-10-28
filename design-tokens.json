@@ -22,8 +22,10 @@
     "yellow_bright": "#FFD470",
     "blue_bright": "#91A9C4",
     "magenta": "#87516D",
+    "magenta_bright_current": "#AD7491",
     "magenta_bright": "#C18BA9",
     "cyan": "#3F7777",
+    "cyan_bright_current": "#578F8F",
     "cyan_bright": "#79B1AF",
     "white_bright": "#FFFFF2"
   },
@@ -33,7 +35,9 @@
     "foreground": "#191F22",
     "surface": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068"],
     "detail": ["#8C3024", "#765717", "#2F4A35", "#3B5068"],
-    "subtle": ["#C98678", "#D9B969", "#819184", "#8996A4"]
+    "subtle": ["#C98678", "#D9B969", "#819184", "#8996A4"],
+    "diagram_fill": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068", "#87516D", "#3F7777"],
+    "diagram_border": ["#7C3329", "#987528", "#293E30", "#314254", "#684358", "#345E5F"]
   },
   "brand_dark": {
     "status": "working",
@@ -41,7 +45,9 @@
     "foreground": "#EDE3CC",
     "surface": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068"],
     "detail": ["#DE715F", "#FFD470", "#8BA891", "#91A9C4"],
-    "subtle": ["#6A312A", "#806825", "#294033", "#344657"]
+    "subtle": ["#6A312A", "#806825", "#294033", "#344657"],
+    "diagram_fill": ["#A33B2C", "#C9962B", "#2F4A35", "#3B5068", "#87516D", "#3F7777"],
+    "diagram_border": ["#DE715F", "#FFD470", "#8BA891", "#91A9C4", "#AD7491", "#578F8F"]
   },
   "terminal_dark": {
     "status": "working",

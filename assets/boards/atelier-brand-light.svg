@@ -18,13 +18,15 @@
 <text x="104" y="733" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="30" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">Measured contrast</text>
 <text x="104" y="776" fill="#191F22" font-family="IBM Plex Sans, sans-serif" font-size="30" font-weight="400" text-anchor="start" opacity="1" xml:space="preserve">Repeatable geometry</text>
 <rect x="818" y="286" width="646" height="518" rx="0" fill="#3B5068" stroke="none" stroke-width="0" opacity="1"/>
-<rect x="866" y="334" width="248" height="194" rx="0" fill="#A33B2C" stroke="none" stroke-width="0" opacity="1"/>
-<circle cx="1288" cy="432" r="112" fill="#C9962B" stroke="none" stroke-width="0"/>
-<rect x="866" y="578" width="518" height="34" rx="0" fill="#2F4A35" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="866" y="334" width="248" height="194" rx="0" fill="#A33B2C" stroke="#7C3329" stroke-width="8" opacity="1"/>
+<circle cx="1288" cy="432" r="112" fill="#C9962B" stroke="#987528" stroke-width="8"/>
+<rect x="866" y="578" width="518" height="34" rx="0" fill="#2F4A35" stroke="#293E30" stroke-width="5" opacity="1"/>
 <line x1="842" y1="310" x2="1440" y2="310" stroke="#3B5068" stroke-width="3"/>
 <circle cx="1418" cy="334" r="7" fill="#765717" stroke="none" stroke-width="0"/>
 <rect x="866" y="646" width="430" height="18" rx="0" fill="#191F22" stroke="none" stroke-width="0" opacity="0.78"/>
 <rect x="866" y="686" width="350" height="18" rx="0" fill="#191F22" stroke="none" stroke-width="0" opacity="0.48"/>
+<circle cx="1340" cy="744" r="26" fill="#87516D" stroke="#684358" stroke-width="6"/>
+<circle cx="1410" cy="744" r="26" fill="#3F7777" stroke="#345E5F" stroke-width="6"/>
 <text x="1464" y="874" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="600" text-anchor="end" opacity="1" xml:space="preserve">CREAM CANVAS / SEMANTIC ROLES</text>
 <line x1="72" y1="918" x2="1464" y2="918" stroke="#8C3024" stroke-width="2"/>
 <text x="72" y="958" fill="#191F22" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500" text-anchor="start" opacity="1" xml:space="preserve">IBM PLEX SANS</text>
